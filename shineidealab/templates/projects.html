@@ -1,0 +1,96 @@
+{% extends "html_base.html" %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+<!-- ### Project-brief start ### -->
+{% block project %}
+<div class="container project-brief-background" style="margin-top:40px">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="project-brief-title-background">
+            <h1 class="text-center project-brief-title">專案展示</h1>
+        </div>
+
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-1">
+
+                <div class="project-brief-block">
+
+                    <h2 class="text-center project-brief-subtitle">在一起</h2>
+
+                    <div class="text-center project-brief-pic-holder">
+                        <img src="{% static 'pics/project_1_pic.jpg' %}" class="project-brief-pic img-rounded">
+
+                    </div>
+
+                    <p class="text-justify project-brief-content">
+                    在一起，BeThere，圖片管理與分享平台，支援讓人們可以用時間軸及地理座標來瀏覽平台上成千上萬的圖片。最終將完整為行程推薦平台。
+                    </p>
+
+                </div>
+
+                
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-1">
+
+                <div class="project-brief-block">
+
+                    <h2 class="text-center project-brief-subtitle">聰明現金流</h2>
+
+                    <div class="text-center project-brief-pic-holder">
+                        <img src="{% static 'pics/project_1_pic.jpg' %}" class="project-brief-pic img-rounded">
+                    </div>
+
+                    <p class="text-justify project-brief-content">
+                    監控現金流的平台，特別著重歷史現金流變化，可預測未來的現金持有量，可開設多個現金流帳戶來做管理，監控不同群組或角色的現金流量變化。
+                    </p>
+
+                </div>
+
+                
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-1">
+
+                <div class="project-brief-block">
+
+                    <h2 class="text-center project-brief-subtitle">大夥買</h2>
+
+                    <div class="text-center project-brief-pic-holder">
+                        <img src="{% static 'pics/project_1_pic.jpg' %}" class="project-brief-pic img-rounded">
+                    </div>
+
+                    <p class="text-justify project-brief-content">
+                    網路商品上架與社群商店平台，廠商可以上架商品，會員可以將廠商的商品加入到自己的小店中，會員幫助廠商推廣或銷售成功，可以取得廠商的回饋金。
+                    </p>
+
+                </div>
+
+                
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-1">
+
+                <div class="project-brief-block">
+
+                    <h2 class="text-center project-brief-subtitle">名片交流平台</h2>
+
+                    <div class="text-center project-brief-pic-holder">
+                        <img src="{% static 'pics/project_1_pic.jpg' %}" class="project-brief-pic img-rounded">
+                    </div>
+
+                    <p class="text-justify project-brief-content">
+                    可以建立自己的名片，並開放在平台上供人索取與交換；同時能管理名片，並將收集到的名片再分享給別人，達到在網路快速認識更多關鍵人士的機會。
+                    </p>
+
+                </div>
+
+                
+            </div>              
+        </div>
+    </div>
+</div>
+{% endblock %}
+<!-- ### Project-brief end ### -->
+

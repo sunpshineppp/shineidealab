@@ -1,0 +1,113 @@
+{% load staticfiles %}
+
+<!doctype html>
+<html>
+<head>
+    <title>翔耀創意 | Shine idea LAB </title>
+    <meta charset="utf-8">
+    <meta name="author" content="sunpshine">
+    <meta name="description" content="Shine idea LAB - 翔耀創意科技有限公司">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 
+    meta "http-equiv"
+    http://injerry.pixnet.net/blog/post/57042465-%E3%80%90html%E6%95%99%E5%AD%B8%E3%80%91x-ua-compatible%E8%A8%AD%E7%BD%AEie%E5%85%BC%E5%AE%B9%E6%A8%A1%E5%BC%8F
+
+    it is for browser support.
+    -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 
+    meta "viewport"
+    http://blog.caesarchi.com/2012/05/html-viewport-meta.html
+    http://www.tutorialspoint.com/bootstrap/bootstrap_css_overview.htm
+
+    it is for RWD to get device-width and react.
+    width=device-width ==> to load page with width as the same as device-width.
+    -->
+
+    <!--
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    
+    favicon
+    http://zh.wikipedia.org/wiki/Favicon
+    http://www.favicon.cc/
+    -->
+
+    <!--
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    http://www.970px.com/ios-mobile-icon/
+    http://www.pic2icon.com/zh-tw/site_icon_for_iphone_ipad_generator.php
+    -->
+    
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+    
+    <!--
+    font-awesome
+    http://fortawesome.github.io/Font-Awesome/icons/
+    -->
+    
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+{% include 'navbar.html' %}
+
+<!-- ### home ### -->
+{% block home_head-banner %}{% endblock %}
+{% block home_about-brief %}{% endblock %}
+{% block home_project-brief %}{% endblock %}
+{% block home_release-brief %}{% endblock %}
+{% block home_contact-brief %}{% endblock %}
+
+<!-- ### about ### -->
+{% block about %}{% endblock %}
+
+
+<!-- ### project ### -->
+{% block project %}{% endblock %}
+
+<!-- ### release ### -->
+{% block release %}{% endblock %}
+
+
+<!-- ### contact ### -->
+{% block contact %}{% endblock %}
+
+<!-- ### test ### -->
+{% block test %}{% endblock %}
+
+<!-- 
+<nav class="navbar navbar-inverse navbar-static-bottom" role="navigation">
+    <div class="container">
+        <p>Copyright</p>
+    </div>
+</nav>
+ -->
+
+<!-- ### footer start ### -->
+{% include 'footer.html' %}
+<!-- ### footer end ### -->
+
+
+
+<!-- LOAD JS AT THE BOTTOM OF BODY 
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+-->
+
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+
+</body>
+</html>
+

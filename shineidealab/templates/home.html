@@ -1,0 +1,313 @@
+{% extends "html_base.html" %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+
+
+<!-- ### head banner start ### -->
+{% block home_head-banner %}
+<div class="carousel">
+    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+      <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner head-banner-position" role="listbox">
+
+        <div class="item active">
+          <img src="{% static 'pics/head_banner_1.jpg' %}">
+        </div>
+
+        <div class="item">
+          <img src="{% static 'pics/head_banner_2.jpg' %}">
+        </div>
+
+        <div class="item">
+          <img src="{% static 'pics/head_banner_3.jpg' %}">
+        </div>
+
+        </div>
+    </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!--
+https://github.com/jonom/jquery-focuspoint
+<div id="Frame" class="focuspoint" data-focus-x="0.3" data-focus-y="0.2" data-image-w="1500" data-image-h="600">
+    <img src="pics/head_banner_1.jpg" alt="">
+</div>
+<div id="Frame" class="focuspoint" data-focus-x="0.3" data-focus-y="0.2" data-image-w="1500" data-image-h="600">
+    <img src="pics/head_banner_2.jpg" alt="">
+</div>
+<div id="Frame" class="focuspoint" data-focus-x="0.3" data-focus-y="0.2" data-image-w="1500" data-image-h="600">
+    <img src="pics/head_banner_3.jpg" alt="">
+</div>
+-->
+
+{% endblock %}
+<!-- ### head banner end ### -->
+
+
+<!-- ### About-brief start ### -->
+{% block home_about-brief %}
+<div class="container about-brief-background">
+    <div class="about-brief-title-background">
+        <h1 class="text-center about-brief-title">關於我們</h1>
+    </div>
+    <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-10 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-1 col-xs-offset-1">
+        
+        <div class="about-brief-block">
+
+            <p class="text-center"><span class="glyphicon glyphicon-piggy-bank about-brief-icon" aria-hidden="true"></span></p>
+
+            <!-- 營運企劃 / Business consultant -->
+            <h2 class="text-center about-brief-subtitle">營運企劃</h2>
+            <p class="text-justify about-brief-content">
+            全方位協助客戶創新或改善營運模式，從目標客群訪查到問題分析，腦力激盪提出解決方案，並進一步規劃完整的服務流程；計畫範疇確立後，將建議該計畫所需之團隊、資源、技術、工具；接著，設計核心軟體之規格，建立開發時間表及行銷企劃，估算成本以及初期損益表。
+            </p>
+
+        
+
+            <div class="text-center">
+                <a href="page-about-business_consultant.html" class="btn btn-rw btn-primary about-brief-button">
+                了解更多
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-10 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-1 col-xs-offset-1">
+        
+        <div class="about-brief-block">
+
+            <p class="text-center"><span class="glyphicon glyphicon-globe about-brief-icon" aria-hidden="true"></span></p>
+
+            <!-- 網站開發 / Web-base application -->
+            <h2 class="text-center about-brief-subtitle">網站開發</h2>
+            <p class="text-justify about-brief-content">
+            針對客戶需求，規劃短中長期開發計畫，引入PMP國際認證專案管理流程，重視初期之專案範疇界定、以及後期的成果驗收。前端程式採用HTML5、CSS3、javascript；前端框架採用bootstrap、nodeJS；後端採用ROR；資料庫採用mySQL或NOSQL；伺服器安裝於AWS。
+            </p>
+
+        
+
+            <div class="text-center">
+                <a href="page-about-web_base_application.html" class="btn btn-rw btn-primary about-brief-button">
+                了解更多
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-10 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-1 col-xs-offset-1">
+
+        <div class="about-brief-block">
+        
+            <p class="text-center"><span class="glyphicon glyphicon-tint about-brief-icon" aria-hidden="true"></span></p>
+
+            <!-- 補助申請 / Research fund apply -->
+            <h2 class="text-center about-brief-subtitle">補助申請</h2>
+            <p class="text-justify about-brief-content">
+            累積多年政府研發補助專案經驗，協助客戶以創新技術或服務申請政府補助。從服務可包含研發或創業主題之設定、分階段申請策略之擬定、計畫書之撰寫、簡報技巧之教學、簽約與管考之協助、結案驗收之輔導，並專業協助政府專案執行中的進度追蹤及會計作業。
+            </p>
+
+        
+
+            <div class="text-center">
+                <a href="page-about-research_fund_apply.html" class="btn btn-rw btn-primary about-brief-button">
+                了解更多
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+{% endblock %}
+<!-- ### About-brief end ### -->
+
+
+<!-- ### Project-brief start ### -->
+{% block home_project-brief %}
+<div class="container project-brief-background">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="project-brief-title-background">
+            <h1 class="text-center project-brief-title">專案展示</h1>
+        </div>
+
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-1">
+
+                <div class="project-brief-block">
+
+                    <h2 class="text-center project-brief-subtitle">在一起</h2>
+
+                    <div class="text-center project-brief-pic-holder">
+                        <img src="{% static 'pics/project_1_pic.jpg' %}" class="project-brief-pic img-rounded">
+
+                    </div>
+
+                    <p class="text-justify project-brief-content">
+                    在一起，BeThere，圖片管理與分享平台，支援讓人們可以用時間軸及地理座標來瀏覽平台上成千上萬的圖片。最終將完整為行程推薦平台。
+                    </p>
+
+                </div>
+
+                
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-1">
+
+                <div class="project-brief-block">
+
+                    <h2 class="text-center project-brief-subtitle">聰明現金流</h2>
+
+                    <div class="text-center project-brief-pic-holder">
+                        <img src="{% static 'pics/project_1_pic.jpg' %}" class="project-brief-pic img-rounded">
+                    </div>
+
+                    <p class="text-justify project-brief-content">
+                    監控現金流的平台，特別著重歷史現金流變化，可預測未來的現金持有量，可開設多個現金流帳戶來做管理，監控不同群組或角色的現金流量變化。
+                    </p>
+
+                </div>
+
+                
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-1">
+
+                <div class="project-brief-block">
+
+                    <h2 class="text-center project-brief-subtitle">大夥買</h2>
+
+                    <div class="text-center project-brief-pic-holder">
+                        <img src="{% static 'pics/project_1_pic.jpg' %}" class="project-brief-pic img-rounded">
+                    </div>
+
+                    <p class="text-justify project-brief-content">
+                    網路商品上架與社群商店平台，廠商可以上架商品，會員可以將廠商的商品加入到自己的小店中，會員幫助廠商推廣或銷售成功，可以取得廠商的回饋金。
+                    </p>
+
+                </div>
+
+                
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-1">
+
+                <div class="project-brief-block">
+
+                    <h2 class="text-center project-brief-subtitle">名片交流平台</h2>
+
+                    <div class="text-center project-brief-pic-holder">
+                        <img src="{% static 'pics/project_1_pic.jpg' %}" class="project-brief-pic img-rounded">
+                    </div>
+
+                    <p class="text-justify project-brief-content">
+                    可以建立自己的名片，並開放在平台上供人索取與交換；同時能管理名片，並將收集到的名片再分享給別人，達到在網路快速認識更多關鍵人士的機會。
+                    </p>
+
+                </div>
+
+                
+            </div>              
+        </div>
+    </div>
+</div>
+{% endblock %}
+<!-- ### Project-brief end ### -->
+
+
+<!-- ### Release-brief start ### -->
+{% block home_release-brief %}
+<div class="container release-brief-background">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="release-brief-title-background">
+            <h1 class="text-center release-brief-title">消息發布</h1>
+        </div>
+            
+            {% for release in release_list_brief %}
+            <div class="col-lg-6 col-md-6 col-sm-10 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-1 col-xs-offset-1">
+                <div class="release-brief-block">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-1 col-xs-offset-1">
+                            <h3 class="text-center release-brief-subtitle">{{ release.release_title }}</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                            <div class="text-center release-brief-pic-holder">
+                                <img src="{{ release.release_photo_brief }}" class="release-brief-pic">
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                            <p class="text-justify release-brief-content">
+                            {{ release.release_content_brief }}
+                            </p>
+                        </div>   
+                    </div>  
+                </div>              
+            </div>
+            {% endfor %}
+
+            
+        
+
+        
+        </div>
+    </div>
+</div>
+{% endblock %}
+<!-- ### Release-brief end ### -->
+
+
+<!-- ### Contact-brief start ### -->
+{% block home_contact-brief %}
+<div class="container contact-brief-background">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="contact-brief-title-background">
+                <h1 class="text-center contact-brief-title">聯絡我們</h1>
+            </div>
+
+            {% if messages %}
+            <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                {% for message in messages %}
+                    <p{% if message.tags == "success" %} class="alert alert-success text-center"{% endif %}>{{ message }}</p>
+                {% endfor %}
+            </div>
+            {% endif %}
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+                        <form method='POST' action=''>{% csrf_token %}
+                            {{form|crispy}}
+                            <input type='submit' value='確認送出' class="btn btn-primary">
+                        </from>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+<!-- ### Contact-brief end ### -->

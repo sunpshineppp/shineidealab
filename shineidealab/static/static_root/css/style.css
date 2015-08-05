@@ -1,0 +1,341 @@
+/*
+color form http://www.color-hex.com/color/afcdff
+*/
+
+/*
+@media screen and (min-width: 1201px) {
+
+}
+
+@media screen and (min-width: 761px) and (max-width: 1200px) {
+
+}
+
+@media screen and (min-width: 561px) and (max-width: 760px) {
+
+}
+
+@media screen and (max-width: 560px) {
+
+}
+*/
+
+.no-margin
+{
+	margin: 0px;
+}
+
+.no-padding
+{
+	padding: 0px;
+}
+
+/*
+############# nav start #############
+*/
+.header-nav-style
+{
+	background-color: #111419;
+	color: #fff;
+}
+
+.nav-padding-bottom
+{
+	padding-bottom: 0px;
+}
+/*
+############# nav end #############
+*/
+
+/*
+############# head banner start #############
+*/
+.head-banner-position
+{
+	padding: 0px 0px 0px 0px;
+	margin: 50px 0px 0px 0px;
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/* pic: 1500*600 */
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: none !important;
+  min-width: 100% !important;
+  height: auto;
+}
+
+
+
+
+/*
+############# head banner end #############
+*/
+
+
+
+/*
+############# about-brief start #############
+*/
+.about-brief-background{
+background-color: #e2edff;
+width:100%;
+padding-bottom: 30px;
+}
+
+.about-brief-title-background{
+background-color: #e2edff;
+padding: 10px;
+margin: 10px;
+}
+
+.about-brief-title{
+font-weight:900;
+margin: 10px;
+}
+
+.about-brief-block{
+padding-top: 15px;
+margin: 10px;
+background-color: #e5eaf2;
+border-style: solid;
+border-width:2px;
+border-color: #dae1ec;
+}
+
+.about-brief-subtitle{
+padding: 10px;
+margin: 10px;
+}
+
+.about-brief-content{
+padding-bottom: 10px;
+margin: 10px;
+}
+
+.about-brief-button{
+padding-bottom: 10px;
+margin: 10px;
+}
+
+
+@media screen and (min-width: 1201px) {
+	.about-brief-icon{
+	background-color: #43474c;
+	color: #afcdff;
+	font-size: 200px;
+	padding: 30px;
+	border-radius: 100%;	 
+	}
+}
+
+@media screen and (min-width: 761px) and (max-width: 1200px) {
+	.about-brief-icon{
+	background-color: #43474c;
+	color: #afcdff;
+	font-size: 150px;
+	padding: 30px;
+	border-radius: 100%; 
+	}
+}
+
+@media screen and (min-width: 561px) and (max-width: 760px) {
+	.about-brief-icon{
+	background-color: #43474c;
+	color: #afcdff;
+	font-size: 120px;
+	padding: 30px;
+	border-radius: 100%; 
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.about-brief-icon{
+	background-color: #43474c;
+	color: #afcdff;
+	font-size: 90px;
+	padding: 30px;
+	border-radius: 100%; 
+	}
+}
+
+/*
+############# about-brief end #############
+*/
+
+
+
+
+/*
+############# project-brief start #############
+*/
+.project-brief-background{
+background-color: #fff0f6;
+width:100%;
+padding-bottom: 30px;
+}
+
+.project-brief-title-background{
+background-color: #fff0f6;
+padding: 10px;
+margin: 10px;
+}
+
+.project-brief-title{
+font-weight:900;
+padding: 10px;
+margin: 10px;
+}
+
+.project-brief-block{
+padding-top: 15px;
+margin: 10px;
+background-color: #e5eaf2;
+border-style: solid;
+border-width:2px;
+border-color: #dae1ec;
+}
+
+.project-brief-subtitle{
+margin: 10px;
+}
+
+.project-brief-pic-holder{
+margin: 15px;
+}
+
+
+.project-brief-pic{
+/* pic: 300*220 */
+width:100%;
+}
+
+.project-brief-content{
+padding-bottom: 20px;
+margin: 10px;
+
+}
+/*
+############# project-brief end #############
+*/
+
+
+
+/*
+############# blog-brief start #############
+*/
+.blog-brief-background{
+background-color: #edffe2;
+width:100%;
+padding-bottom: 30px;
+}
+
+.blog-brief-title-background{
+background-color: #edffe2;
+padding: 10px;
+margin: 10px;
+}
+
+.blog-brief-title{
+margin: 10px;
+}
+
+.blog-brief-block{
+padding-top: 15px;
+margin: 10px;
+background-color: #e5eaf2;
+border-style: solid;
+border-width:2px;
+border-color: #dae1ec;
+}
+
+.blog-brief-subtitle{
+margin: 10px;	
+}
+
+.blog-brief-pic-holder{
+margin: 15px;
+}
+
+.blog-brief-pic{
+	/* pic: 300*220 */
+	width:100%;
+
+}
+
+.blog-brief-content{
+margin: 10px;	
+}
+/*
+############# blog-brief end #############
+*/
+
+
+
+/*
+############# contact-brief start #############
+*/
+.contact-brief-background{
+background-color: #eff5ff;
+width:100%;
+padding-bottom: 30px;
+}
+
+.contact-brief-title-background{
+background-color: #eff5ff;
+padding: 10px;
+margin: 10px;
+}
+
+.contact-brief-title{
+margin: 10px;
+}
+
+.contact-brief-formbutton{}
+/*
+############# contact-brief end #############
+*/
+
+
+
+/*
+############# footer start #############
+*/
+.footer-style
+{
+	margin-top: 10px;
+	padding-top: 10px;
+	background-color: #111419;
+	color: #fff;
+}
+/*
+############# footer end #############
+*/
+
+
+
+

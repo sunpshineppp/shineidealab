@@ -1,0 +1,61 @@
+<nav class="navbar navbar-inverse navbar-fixed-top header-nav-style nav-padding-bottom" role="navigation">
+<!-- 
+class="navbar-inverse" ==> black background style.
+class="navbar-static-top" ==> filled the space between navbar and display corner edge.
+-->
+
+    <!-- ### navbar container start ### -->
+    <div class="container">
+    <!-- 
+    class="container"
+    class="container-fluid" ==> no space at extreme left and right.
+    -->
+        
+        <!-- ### navbar header start ### -->
+        <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+            <!-- 
+            class="navbar-toggle" ==> RWD for smaller advices, navbar -> nav button.
+            data-target="#navbar-collapse-1"> ==> call the header div with id. dont forget there is a # .
+            -->
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="#">Shine idea LAB - 翔耀創意科技有限公司</a>
+
+        </div>
+        <!-- ### navbar header end ### -->
+
+
+        <!-- ### navbar start ### -->
+        <div class="collapse navbar-collapse navbar-right" id="navbar-collapse-1">
+        <!-- 
+        class="collapse navbar-collapse" ==> RWD for smaller advices, navbar -> nav button.
+        id="bs-example-navbar-collapse-1" ==> tell the collapse button this id.
+        -->
+            <ul class="nav navbar-nav">
+                <li class="{% if request.get_full_path = '/home/' %}active{% endif%}"><a href="{% url 'page_home' %}">首頁</a></li>
+                <li class="{% if request.get_full_path = '/about/' %}active{% endif%}"><a href="{% url 'page_about' %}">關於我們</a></li>
+                <li class="{% if request.get_full_path = '/projects/' %}active{% endif%}"><a href="{% url 'page_projects' %}">專案展示</a></li>
+                <li class="{% if request.get_full_path = '/release/' %}active{% endif%}"><a href="{% url 'page_release' %}">消息發布</a></li>
+                <li class="{% if request.get_full_path = '/contact/' %}active{% endif%}"><a href="{% url 'page_contact' %}">連絡我們</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">功能<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">註冊&nbsp;&nbsp;/&nbsp;&nbsp;登入</a></li>
+                            <li><a href="#">語系</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">工作機會</a></li>
+                        </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- ### navbar start ### -->
+    </div>
+    <!-- ### navbar container end ### -->
+</nav>

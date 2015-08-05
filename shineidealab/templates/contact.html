@@ -1,0 +1,39 @@
+{% extends "html_base.html" %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+	
+
+
+<!-- ### Contact-brief start ### -->
+{% block contact %}
+<div class="container contact-brief-background" style="margin-top:40px">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="contact-brief-title-background">
+                <h1 class="text-center contact-brief-title">聯絡我們</h1>
+            </div>
+
+            {% if messages %}
+            <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                {% for message in messages %}
+                    <p{% if message.tags == "success" %} class="alert alert-success text-center"{% endif %}>{{ message }}</p>
+                {% endfor %}
+            </div>
+            {% endif %}
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+                        <form method='POST' action=''>{% csrf_token %}
+                            {{form|crispy}}
+                            <input type='submit' value='確認送出' class="btn btn-primary">
+                        </from>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
