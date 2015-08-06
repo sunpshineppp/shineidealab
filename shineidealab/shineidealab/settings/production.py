@@ -25,7 +25,7 @@ SECRET_KEY = 'jh*1=4@s^+3d+mh6ez(p9xlijtc4v$azrk(vej(*3r4jl65v&a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [*]
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'gbassppp@gmail.com'
