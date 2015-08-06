@@ -1,0 +1,6 @@
+option_settings:
+  "aws:elasticbeanstalk:application:environment":
+    DJANGO_SETTINGS_MODULE: "shineidealab.settings"
+    PYTHONPATH: "/opt/python/current/app/shineidealab:$PYTHONPATH"
+  "aws:elasticbeanstalk:container:python":
+    WSGIPath: "shineidealab/shineidealab/wsgi.py"

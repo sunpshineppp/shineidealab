@@ -1,0 +1,10 @@
+branch-defaults:
+  master:
+    environment: shineidealab-env
+global:
+  application_name: shineidealab
+  default_ec2_keyname: shineidealabawskey20150511
+  default_platform: Python 3.4
+  default_region: ap-southeast-1
+  profile: eb-cli
+  sc: git
