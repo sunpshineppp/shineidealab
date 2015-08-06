@@ -30,6 +30,7 @@ color form http://www.color-hex.com/color/afcdff
 	padding: 0px;
 }
 
+
 /*
 ############# nav start #############
 */
@@ -207,7 +208,6 @@ margin: 10px;
 
 .project-brief-title{
 font-weight:900;
-padding: 10px;
 margin: 10px;
 }
 
@@ -246,25 +246,26 @@ margin: 10px;
 
 
 /*
-############# blog-brief start #############
+############# release-brief start #############
 */
-.blog-brief-background{
+.release-brief-background{
 background-color: #edffe2;
 width:100%;
 padding-bottom: 30px;
 }
 
-.blog-brief-title-background{
+.release-brief-title-background{
 background-color: #edffe2;
 padding: 10px;
 margin: 10px;
 }
 
-.blog-brief-title{
+.release-brief-title{
+font-weight:900;
 margin: 10px;
 }
 
-.blog-brief-block{
+.release-brief-block{
 padding-top: 15px;
 margin: 10px;
 background-color: #e5eaf2;
@@ -273,25 +274,25 @@ border-width:2px;
 border-color: #dae1ec;
 }
 
-.blog-brief-subtitle{
+.release-brief-subtitle{
 margin: 10px;	
 }
 
-.blog-brief-pic-holder{
+.release-brief-pic-holder{
 margin: 15px;
 }
 
-.blog-brief-pic{
+.release-brief-pic{
 	/* pic: 300*220 */
 	width:100%;
 
 }
 
-.blog-brief-content{
+.release-brief-content{
 margin: 10px;	
 }
 /*
-############# blog-brief end #############
+############# release-brief end #############
 */
 
 
@@ -312,6 +313,7 @@ margin: 10px;
 }
 
 .contact-brief-title{
+font-weight:900;
 margin: 10px;
 }
 
